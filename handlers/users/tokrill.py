@@ -17,4 +17,3 @@ async def convlotin(message: types.Message, state: FSMContext):
     # print(msg)
     convertlotin = to_cyrillic(msg)
     await message.answer(text=convertlotin, reply_markup=back)
-    await state.finish()
